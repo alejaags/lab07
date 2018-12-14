@@ -12,9 +12,9 @@ import java.net.URL;
 public class HttpConnectImpl implements HttpConnect {
 
 
-
+    //http://www.omdbapi.com/?t=Guardians+of+the+Galaxy+Vol.+2&y=2017&apikey=28075c2c
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String GET_URL = "https://www.alphavantage.co/query?function=%s&symbol=%s&apikey=Q1QZFVJQ21K7C6XM";
+    private static final String GET_URL = "http://www.omdbapi.com/?t=%s&y=%s&apikey=28075c2c";
 
     @Override
     public StringBuffer httpcenter(String empresa, String date) throws IOException {

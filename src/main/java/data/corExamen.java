@@ -4,9 +4,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class lab07 {
+public class corExamen {
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(lab07.class, args);
+        SpringApplication.run(corExamen.class, args);
 
     }
 }

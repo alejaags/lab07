@@ -6,17 +6,17 @@ import data.services.dataService;
 
 @CrossOrigin("*")
 @RestController()
-@RequestMapping(value = "/Bolsa")
+@RequestMapping(value = "/Movie")
 public class dataController {
 
 
     @Autowired
     dataService dataService;
 
-    @GetMapping("/{function}/{symbol}")
-    public StringBuffer getBolsaInfo(@PathVariable("function") String function, @PathVariable("symbol") String symbol){
-        System.out.println(function);
-        System.out.println(symbol);
-        return dataService.bolsa(symbol,function);
+    @GetMapping("/{title}/{year}")
+    public StringBuffer getMovieInfo(@PathVariable("title") String title, @PathVariable("year") String year){
+        System.out.println(title);
+        System.out.println(year);
+        return dataService.movie(title,year);
     }
 }

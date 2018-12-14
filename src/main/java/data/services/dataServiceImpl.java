@@ -12,14 +12,16 @@ public class dataServiceImpl implements dataService {
     @Autowired
     HttpConnect connection;
 
+   
+
     @Override
-    public StringBuffer bolsa(String emp, String date) {
-        StringBuffer bolsa = null;
+    public StringBuffer movie(String title, String year) {
+        StringBuffer mov = null;
         try {
-            bolsa = connection.httpcenter(emp,date);
+            mov = connection.httpcenter(title,year);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return bolsa;
+        return mov;
     }
 }
