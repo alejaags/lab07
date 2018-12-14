@@ -13,7 +13,12 @@ public class dataServiceImpl implements dataService {
     HttpConnect connection;
 
    
-
+    /**
+     * consult a movie by title and year
+     * @param title name of the movie
+     * @param year year that the movie was published
+     * @return returns the js that refers this movie
+     */
     @Override
     public StringBuffer movie(String title, String year) {
         StringBuffer mov = null;

@@ -18,13 +18,23 @@
 
 <body class="text-center">
 	<p>	Title:</p>
-	<input id="titl" type="text" size="15" maxlength="30" name="valor">
+	<input id="titl" type="text" size="15" maxlength="50" name="title">
 	<p>Year:</p>
-	<input id="yea" type="text" size="15" maxlength="30" name="valor">
+	<input id="yea" type="text" size="15" maxlength="50" name="year">
 	<br></br>
-	<button class="button" onclick="searchMovie.detInfo()">Search</button>
-	<br></br>
-	<p id="resp"></p>
+	<button class="button" onclick="searchMovie.getInfo()">Search</button>
+        <br></br>
+        <p id="t"></p>
+	<p id="y"></p>
+        <p id="rated"></p>
+	<p id="runtime"></p>
+	<p id="director"></p>
+        <p id="plot"></p>
+        <p id="language"></p>
+	<p id="awards"></p>
+        <p id="poster"></p>
+
+        
 
 
 
@@ -36,7 +46,7 @@
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 		<script src="./index_files/popper.min.js"></script>
 		<script src="./index_files/bootstrap.min.js"></script>
-		<script src="/js/main.js"></script>
+		<script src="/js/backEndController.js"></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 

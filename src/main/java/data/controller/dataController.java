@@ -13,6 +13,12 @@ public class dataController {
     @Autowired
     dataService dataService;
 
+    /**
+     * search the dataMovie by title and year
+     * @param title name of the movie
+     * @param year year
+     * @return 
+     */
     @GetMapping("/{title}/{year}")
     public StringBuffer getMovieInfo(@PathVariable("title") String title, @PathVariable("year") String year){
         System.out.println(title);
